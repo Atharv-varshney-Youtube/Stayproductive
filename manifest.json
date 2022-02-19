@@ -1,0 +1,33 @@
+{
+    "name": "Stay Productive",
+    "description": "Stay productive description",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "./popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "./styles/ContentScript.css"
+            ],
+            "js": [
+                "./scripts/contentScript.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "./scripts/background.js"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}

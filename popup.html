@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Productive</title>
+    <style>
+        .container {
+            width: 400px;
+            max-height: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .topItem {
+            height: 65%;
+        }
+
+        .topItem>h1 {
+            font-family: cursive;
+            text-align: center;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: rgb(48, 48, 48);
+            border-bottom: 2px solid rgb(225, 225, 225);
+        }
+
+        .topItemMain {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .Info {
+            padding-left: 10px;
+        }
+
+        .Info>p {
+            color: rgb(104, 104, 104);
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Info>h4 {
+            color: rgb(48, 48, 48);
+            font-size: 17px;
+            padding: 0;
+            margin: 0;
+        }
+
+        #btn {
+            color: rgb(241, 88, 88);
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px 10px;
+            background-color: rgb(252, 252, 252);
+            border: 1px solid black;
+            outline: none;
+        }
+
+        #btn:hover {
+            background-color: rgb(245, 245, 245);
+            cursor: pointer;
+        }
+
+        #btn:active {
+            background-color: rgb(175, 175, 175);
+        }
+
+
+        .bottomItem {
+            height: 35%;
+            position: relative;
+        }
+
+        .ERROR {
+            padding-top: 5px;
+        }
+
+        .ERROR>p {
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+            background: lightgray;
+            padding: 2px 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="topItem">
+
+            <h1>Stay Productive</h1>
+
+            <div class="topItemMain">
+                <div class="Info">
+                    <p>You are currently on :</p>
+                    <h4 id="url"></h4>
+                </div>
+                <button id="btn">BLOCK THIS URL</button>
+            </div>
+        </div>
+
+        <div class="bottomItem">
+        </div>
+
+    </div>
+</body>
+<script src="./scripts/popup.js"></script>
+
+</html>
